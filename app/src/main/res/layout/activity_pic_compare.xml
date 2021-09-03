@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.PicDetectActivity">
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img2"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_result"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bt_detect"
+        android:text="开始比对"
+        android:onClick="detect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
